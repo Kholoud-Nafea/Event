@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import AddEvent from './component/AddEvent';
+import DisplayEvent from './component/DisplayEvent';
+import { EventContext } from './component/EventsContext';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <DisplayEvent /> */}
+      <AddEvent />
+      {/* <EventContext /> */}
     </div>
   );
 }
